@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,18 @@
     <title>Word Counter</title>
     <link rel="stylesheet" href="./tailwind/output.css">
 </head>
+
 <body>
-    <h1 class="text-6xl ">Word Counter</h1>
+    <h1> Real Time Word Counter Using Web Workers</h1>
+    <textarea id="text" rows="10" cols="150" placeholder="Start Typing..."></textarea>
+
+    <div>
+        <h2>Word Count: <span id="wordCount">0</span></h2>
+        <h2>Character Count: <span id="charCount">0</span></h2>
+        <h2>Line Count: <span id="lineCount">0</span></h2>
+        <h2>Most Repeated Word: <span id="mostRepeatedWord"></span> (<span id="mostRepeatedWordCount">0</span>)</h2>
+    </div>
     <script src="./assets/index.js"></script>
-</body> 
+</body>
+
 </html>
